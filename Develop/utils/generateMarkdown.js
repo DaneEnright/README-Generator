@@ -8,7 +8,16 @@ function renderLicenseBadge(license) {}
 
 function renderLicenseLink(license) {
   //use if else statement
+  // if (!y) {
+    // console.log('y is not provided');
+    // return `\nThe area of the square is ${Math.pow(x, 2)} sq units`;
+  // }
+  // console.log('y = ', y);
+  // return `\nThe area of the rectangle is ${x * y} sq units`;
+//  ;
 
+//.then((resolved) => console.log(resolved))
+//.catch((err) => console.error(err));
 
   return license;
 }
@@ -49,6 +58,8 @@ function generateMarkdown(data) {
   ## Collaborator
 
   ${data.contributors}
+
+  ## License
 
   ${renderLicenseLink(data.license)}
 
