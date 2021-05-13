@@ -2,7 +2,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const inquirer = require("inquirer")
+const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
@@ -48,16 +48,20 @@ const questions = [
     type: "checkbox",
     name: "credit",
     message: "What technologies were used?",
-    choices: ["VS Code", "Github", "Google Chrome","APIs"],
+    choices: ["VS Code", "Github", "Google Chrome", "APIs"],
+  },
+  {
+    type: "input",
+    name: "testing",
+    message:
+      "Are there any tests for the application and if so how do they work?",
   },
 ];
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    // return fs.writeFile("README.md")
+  // return fs.writeFile("README.md")
   return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
-
-
 
 // TODO: Create a function to initialize app
 function init() {

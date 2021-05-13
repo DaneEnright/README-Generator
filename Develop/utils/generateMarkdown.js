@@ -45,17 +45,18 @@ function generateMarkdown(data) {
 
   ## Installation
 
-  ${data.installation}
+  ${data.installation} special steps needed for installation. 
 
   ## Usage
 
-  ${data.github}
+  Here is the link to the page: ${data.github}
 
   ## Credit
 
+  Technologies Used:
   ${data.credit}
 
-  ## Collaborator
+  ## Collaborators
 
   ${data.contributors}
 
@@ -65,8 +66,12 @@ function generateMarkdown(data) {
 
   ## How to Contribute
 
-  ${data.email}
+  If you would like to contribute to this application you can contact the developer ${data.email}.
+
+  ## Tests
   
+  ${data.testing}
+
 `;
 }
 
