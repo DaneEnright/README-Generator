@@ -44,6 +44,12 @@ const questions = [
     name: "contributors",
     message: "Were there any contributors on this application?",
   },
+  {
+    type: "checkbox",
+    name: "credit",
+    message: "What technologies were used?",
+    choices: ["VS Code", "Github", "Google Chrome","APIs"],
+  },
 ];
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {

@@ -32,7 +32,27 @@ function generateMarkdown(data) {
   *[Usage](#usage)
   *[Credits](#credits)
 
+  ## Installation
+
+  ${data.installation}
+
+  ## Usage
+
+  ${data.github}
+
+  ## Credit
+
+  ${data.credit}
+
+  ## Collaborator
+
+  ${data.contributors}
+
   ${renderLicenseLink(data.license)}
+
+  ## How to Contribute
+
+  ${data.email}
   
 
 `;
